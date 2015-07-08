@@ -39,7 +39,7 @@ There is still much to be desired with this method though. The fonts currently l
 
 ## The Server
 
-Clearly, once I needed to use custom ESI tags, I needed to setup my own server. For this, I employed the use of [Ansible](http://www.ansible.com/home), to manage my server's configuration. I also used [Vagrant]() to be able to create a local environment for me to utilize. The current playbooks I am using are located on my [GitHub profile](https://github.com/iamcarrico/iamcarrico.server), and show the full configuration of my site.
+Clearly, once I needed to use custom ESI tags, I needed to setup my own server. For this, I employed the use of [Ansible](http://www.ansible.com/home), to manage my server's configuration. I also used [Vagrant](https://www.vagrantup.com/) to be able to create a local environment for me to utilize. The current playbooks I am using are located on my [GitHub profile](https://github.com/iamcarrico/iamcarrico.server), and show the full configuration of my site.
 
 My site had officially become "almost static", remaining static for all but the delivery of CSS assets. After a little bit of research and testing, I setup an [nginx](http://nginx.com/) server to deliver a static site to Varnish, which would dynamically add in the header information. After some recomendations from other developers, I created the production server on [Digital Ocean](www.digitalocean.com/?refcode=ad7f8c567c36). Since it was most familiar, I employed the use of PHP to check the existance of CSS files, and deliver them dynamically. Simple so far, right?
 
